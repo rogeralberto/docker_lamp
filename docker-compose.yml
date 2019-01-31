@@ -5,7 +5,7 @@ services:
             - 80:80
         build: .
         volumes:
-            - ../myavex:/var/www/html:z
+            - ./www:/var/www/html:z
         links:
             - 'mariadb'
 
