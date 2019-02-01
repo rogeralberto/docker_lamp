@@ -1,5 +1,5 @@
 FROM ubuntu:16.04
-LABEL maintainer= "Roger Olivares"
+LABEL maintainer=rogerolivares@gmail.com
 
 
 ##Update repository and upgrade the system
