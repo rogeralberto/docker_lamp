@@ -11,7 +11,7 @@ RUN apt-get dist-upgrade -y
 RUN apt-get install -y apache2
 
 ##Install php7 and some librarys
-RUN apt-get install -y php7.0 && apt-get install -y php7.0-intl && apt-get install -y php7.0-mbstring && apt-get install -y php7.0-mcrypt && apt-get install -y php7.0-mysql && apt-get install -y libapache2-mod-php && apt-get install -y wget
+RUN apt-get install -y php7.0 && apt-get install -y php7.0-intl && apt-get install -y php7.0-mbstring && apt-get install -y php7.0-mcrypt && apt-get install -y php7.0-mysql && apt-get install -y libapache2-mod-php && apt-get install -y wget && apt-get install -y unzip && apt-get install -y php-xml
 
 ##Enable handle to pretty url
 RUN a2enmod rewrite
@@ -33,5 +33,8 @@ RUN wget https://getcomposer.org/download/1.8.3/composer.phar
 RUN mv composer.phar /usr/local/bin/composer
 RUN chmod -R 777 /usr/local/bin/composer
 
+WORKDIR /var/www/html
+
 ENTRYPOINT ["/usr/sbin/apache2"]
+
 CMD ["-D", "FOREGROUND"]
