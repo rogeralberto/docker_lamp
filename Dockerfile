@@ -1,4 +1,4 @@
-FROM ubuntu:16.04
+FROM ubuntu:22.04
 LABEL maintainer=rogerolivares@gmail.com
 
 ##Update repository and upgrade the system
