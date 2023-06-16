@@ -20,21 +20,21 @@ RUN apt-get install -y php-curl \
 && apt-get install -y php-gd \
 && apt-get install -y php-tcpdf \
 && apt-get install -y php-xmlrpc \
-&& apt-get install -y php7.0 \
-&& apt-get install -y php7.0-intl \ 
-&& apt-get install -y php7.0-mbstring \ 
-&& apt-get install -y php7.0-mcrypt \
-&& apt-get install -y php7.0-mysql \
-&& apt-get install -y php7.0-common \ 
-&& apt-get install -y php7.0-bcmath \ 
-&& apt-get install -y php7.0-cli \
-&& apt-get install -y php7.0-curl \
-&& apt-get install -y php7.0-gd \
-&& apt-get install -y php7.0-json \ 
-&& apt-get install -y php7.0-opcache \ 
-&& apt-get install -y php7.0-readline \
-&& apt-get install -y php7.0-soap \
-&& apt-get install -y php7.0-xmlrpc     
+&& apt-get install -y php7.3 \
+&& apt-get install -y php7.3-intl \ 
+&& apt-get install -y php7.3-mbstring \ 
+&& apt-get install -y php7.3-mcrypt \
+&& apt-get install -y php7.3-mysql \
+&& apt-get install -y php7.3-common \ 
+&& apt-get install -y php7.3-bcmath \ 
+&& apt-get install -y php7.3-cli \
+&& apt-get install -y php7.3-curl \
+&& apt-get install -y php7.3-gd \
+&& apt-get install -y php7.3-json \ 
+&& apt-get install -y php7.3-opcache \ 
+&& apt-get install -y php7.3-readline \
+&& apt-get install -y php7.3-soap \
+&& apt-get install -y php7.3-xmlrpc     
 
 ##Enable handle to pretty url
 RUN a2enmod rewrite
