@@ -21,21 +21,21 @@ RUN apt-get install -y php-curl \
 && apt-get install -y php-gd \
 && apt-get install -y php-tcpdf \
 && apt-get install -y php-xmlrpc \
-&& apt-get install -y php7.3 \
-&& apt-get install -y php7.3-intl \ 
-&& apt-get install -y php7.3-mbstring \ 
-&& apt-get install -y php7.3-mcrypt \
-&& apt-get install -y php7.3-mysql \
-&& apt-get install -y php7.3-common \ 
-&& apt-get install -y php7.3-bcmath \ 
-&& apt-get install -y php7.3-cli \
-&& apt-get install -y php7.3-curl \
-&& apt-get install -y php7.3-gd \
-&& apt-get install -y php7.3-json \ 
-&& apt-get install -y php7.3-opcache \ 
-&& apt-get install -y php7.3-readline \
-&& apt-get install -y php7.3-soap \
-&& apt-get install -y php7.3-xmlrpc     
+&& apt-get install -y php \
+&& apt-get install -y php-intl \ 
+&& apt-get install -y php-mbstring \ 
+&& apt-get install -y php-mcrypt \
+&& apt-get install -y php-mysql \
+&& apt-get install -y php-common \ 
+&& apt-get install -y php-bcmath \ 
+&& apt-get install -y php-cli \
+&& apt-get install -y php-curl \
+&& apt-get install -y php-gd \
+&& apt-get install -y php-json \ 
+&& apt-get install -y php-opcache \ 
+&& apt-get install -y php-readline \
+&& apt-get install -y php-soap \
+&& apt-get install -y php-xmlrpc     
 
 ##Enable handle to pretty url
 RUN a2enmod rewrite
