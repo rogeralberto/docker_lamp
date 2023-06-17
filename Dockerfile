@@ -1,4 +1,5 @@
 FROM ubuntu:22.04
+ARG DEBIAN_FRONTEND=noninteractive
 LABEL maintainer=rogerolivares@gmail.com
 
 ##Update repository and upgrade the system
