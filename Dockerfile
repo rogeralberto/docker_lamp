@@ -24,7 +24,7 @@ RUN apt-get install -y php-curl \
 && apt-get install -y php \
 && apt-get install -y php-intl \ 
 && apt-get install -y php-mbstring \ 
-&& apt-get install -y php-mcrypt \
+##&& apt-get install -y php-mcrypt \
 && apt-get install -y php-mysql \
 && apt-get install -y php-common \ 
 && apt-get install -y php-bcmath \ 
